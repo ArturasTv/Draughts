@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import FormErrorMessage from "@/components/ui/form-error-message";
 import { Input } from "@/components/ui/input";
