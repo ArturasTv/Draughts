@@ -17,3 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## TODO LIST
 
 - [ ] Add i18n functionality
+- [ ] Add notification provider
