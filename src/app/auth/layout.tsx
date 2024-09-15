@@ -10,6 +10,7 @@ export default function Layout({ children }: PropsWithChildren) {
 			<aside className="md:w-1/2 hidden md:block relative">
 				<Image
 					src="/images/draughts-hero.jpg"
+					className="w-full h-full"
 					alt="Draughts hero"
 					fill
 					style={{
