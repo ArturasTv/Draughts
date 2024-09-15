@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import type { PropsWithChildren } from "react";
+import Providers from "../providers";
 
 const roboto = Roboto({
 	subsets: ["latin"],
@@ -12,14 +14,12 @@ export const metadata: Metadata = {
 	description: "TODO",
 };
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en">
-			<body className={`${roboto.className}`}>{children}</body>
+			<body className={`${roboto.className}`}>
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }
