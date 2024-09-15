@@ -12,7 +12,10 @@ export default function Layout({ children }: PropsWithChildren) {
 					src="/images/draughts-hero.jpg"
 					alt="Draughts hero"
 					fill
-					className="object-cover object-center"
+					style={{
+						objectFit: "cover",
+						objectPosition: "center",
+					}}
 					priority
 				/>
 				<div className="absolute top-0 left-0 h-full w-full backdrop-brightness-50 p-8">
